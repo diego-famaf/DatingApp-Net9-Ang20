@@ -13,7 +13,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IReadOnlyList<AppUser>>> GetMembers()
         {
-             var members = await context.Users.ToListAsync();
+            var members = await context.Users.ToListAsync();
 
             return members;
         }
