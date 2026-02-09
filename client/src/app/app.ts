@@ -18,6 +18,7 @@ export class App implements OnInit{
     this.members.set(await this.getMembers())
   }
 
+  
   async getMembers(){
     try {
       return lastValueFrom(this.http.get('https://localhost:5001/api/members'));
